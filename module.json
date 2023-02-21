@@ -1,0 +1,113 @@
+{
+  "title": "3D Canvas",
+  "id": "levels-3d-preview",
+  "description": "Bring your games to the 3rd dimension!",
+  "version": "4.7.9",
+  "authors": [
+    {
+      "name": "theripper93",
+      "email": "tsplab@gmail.com",
+      "url": "https://www.patreon.com/theripper93"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    },
+    {
+      "lang": "ja",
+      "name": "日本語",
+      "path": "languages/ja.json"
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "languages/de.json"
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "languages/fr.json"
+    },
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "languages/es.json"
+    },
+    {
+      "lang": "it",
+      "name": "Italiano",
+      "path": "languages/it.json"
+    }
+  ],
+  "esmodules": [
+    "scripts/main.js",
+    "scripts/settings/config.js",
+    "scripts/settings/settingsConfig.js"
+  ],
+  "scripts": [
+    "scripts/wrappers.js",
+    "scripts/lib/injectConfig.js",
+    "scripts/lib/three-nebula.js"
+  ],
+  "styles": [
+    "styles/module.css",
+    "styles/loadingScreen.css",
+    "styles/mapgen.css",
+    "styles/sharing.css"
+  ],
+  "packs": [
+    {
+      "name": "documentation",
+      "label": "3D Canvas Documentation",
+      "path": "packs/journals.db",
+      "type": "JournalEntry",
+      "private": false
+    },
+    {
+      "name": "macros",
+      "label": "3D Canvas Macros",
+      "path": "packs/macros.db",
+      "type": "Macro",
+      "private": false
+    },
+    {
+      "name": "partmacros",
+      "label": "3D Canvas Particle Effects",
+      "path": "packs/partmacros.db",
+      "type": "Macro",
+      "private": false
+    }
+  ],
+  "socket": true,
+  "relationships": {
+    "requires": [
+      {
+        "id": "lib-wrapper",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "levels",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "wall-height",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "socketlib",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  }
+}

@@ -1,0 +1,1601 @@
+{
+    "levels3dpreview" : {
+        "controls": {
+            "preview3d": "Toggle 3D Mode",
+            "miniCanvas": "Popout/Restore Canvas",
+            "loading": {
+                "load": "Loading 3D Canvas...",
+                "env": "Creating 3D Environment...",
+                "gravity": "Computing Gravity...",
+                "shaders": "Compiling Shaders..."
+            },
+            "loadingScreen": {
+                "navtools": "Scene Navigation tools (left of ",
+                "showcontrols": "Show Controls (Toggle)",
+                "togglecamera": "Toggle Game Camera",
+                "cameracontrols": "Camera Controls",
+                "tokencontrols": "Token Controls",
+                "pan": "Pan",
+                "rotate": "Rotate",
+                "zoom": "Zoom",
+                "topdown": "Top-Down",
+                "firstperson": "First-Person",
+                "unlock": "Un-lock",
+                "lockon": "Lock-On",
+                "move": "Move",
+                "elevation": "Fly",
+                "snapping": "Snap to Ground",
+                "rebind": "You can Rebind the keys in the settings.",
+                "holddrag": "Hold + Drag",
+                "toggle": "Toggle",
+                "manualpan": "Manually Pan",
+                "dragdrop": "Drag & Drop",
+                "tap": "Tap",
+                "scroll": "Scroll",
+                "loadingdone": "3D Canvas Ready! - Press <i class='fas fa-question control-highlighted'></i> to close this screen."
+           }
+        },
+        "errors": {
+            "initfailed": "3D Canvas: Initialization failed. This can be a caching issue, try CTRL+F5 to refresh the page. Make also sure you have an Active scene. Alternativelly 3D Canvas or one of it's dependencies might be out of date or corrupted. Make sure the modules are up to date and try a reinstall if everything else fails.",
+            "gamecameradisabled": "3D Canvas: Disabling Game Camera - Game Camera is enabled but 'Use 3D Geometry for sight calculations' is disabled.",
+            "filenotsupported": "File format not supported or missing",
+            "toofarfromdoor": "Your Token is too far to open the door",
+            "3dnotactive": "Cannot open canvas popout, the 3D mode is not active.",
+            "canping": "User lacks permission to display pings on the map.",
+            "canpingpan": "User lacks permission to send camera position.",
+            "overmaxelevation": "The attempted movement exceeds the maximum elevation of this scene.",
+            "particleSystem": {
+                "type": "Particle system: type '%type%' not supported, the valid types are: ",
+                "fromto": "Particle system: Target and/or Source where not specified or are undefined.",
+                "onend": "Particle system: .onEnd() - one or more arguments were not an instance of Particle3D."
+            },
+            "critical": "3D Canvas: A Fatal Error was encountered in the Rendering Loop. Attempting to recover...",
+            "notarget": "3D Canvas: No target found for drag and drop. Please ensure you have at least one 3D Object or the Background Enabled."
+        },
+        "clipNavigator": {
+            "disabled": "Show All",
+            "sync": "Sync with Players",
+            "gamecamera": "Toggle Game Camera",
+            "syncNotification": "Level View for {{level}} Synced with all Players",
+            "cameraToToken": "Focus Camera on Selected Token",
+            "automode": "Follow Mode",
+            "controls": "Show Controls",
+            "lockon": "Toggle Lock-On",
+            "performance": "Set Performance Mode",
+            "performancereport": "Performance Report",
+            "wireframe": "Toggle Colliders"
+        },
+        "mapgen": {
+            "title": "Map Generator - Cell height of 1 equals ",
+            "tooltips": {
+                "fit-to-scene": "Autosize and Position Tile",
+                "select-all": "Select All",
+                "deselect-all": "Deselect All",
+                "set-elevation": "Set Height for Selected Cells",
+                "add-material": "Add Material",
+                "apply-material": "Apply Material to Selected Cells",
+                "select-material": "Select Cells with this Material",
+                "select-elevation": "Select Cells with this Height",
+                "delete-material": "Delete Material",
+                "invert": "Invert Selection",
+                "toggle-material": "Expand/Collapse Material",
+                "clear-material": "Clear Material"
+            },
+            "generator": {
+                "title": "Generate Map",
+                "content": "Are you sure you want to generate a new map? This will overwrite all the currently set elevations and cannot be undone!.\nThe first Material slot will be used as the ground material, the rest will be automatically mapped based on cell height.",
+                "height": "Max Height",
+                "cave": "Cave",
+                "dungeon": "Dungeon",
+                "landscape": "Custom",
+                "generate": "Generate",
+                "theme": "Theme",
+                "shore": "Shore",
+                "hills": "Hills",
+                "mountains": "Mountains",
+                "plateau": "Plateau",
+                "valley": "Valley",
+                "island": "Island"
+            },
+            "themes": {
+                "firelands": "Firelands",
+                "desert": "Desert",
+                "plains": "Plains",
+                "wood": "Wood",
+                "frost": "Frost",
+                "jungle": "Jungle Ruins",
+                "crypt": "Crypt",
+                "alien": "Alien",
+                "tech": "Tech",
+                "tmcArabianNights": "Arabian Nights",
+                "tmcNature": "Nature",
+                "tmcDungeon": "Dungeon"
+            },
+            "material": {
+                "name": "Name",
+                "cellColor": "Cell Color",
+                "tint": "Tint Color",
+                "texture": "Texture",
+                "repeat": "Repeat",
+                "rotate": "Randomize",
+                "metalness": "Metalness",
+                "roughness": "Roughness",
+                "opacity": "Opacity",
+                "emissive": "Emissive"
+            },
+            "bevel": "Bevel",
+            "zoom": "Zoom",
+            "rows": "Rows",
+            "columns": "Columns"
+        },
+        "sharing": {
+            "sharemap": {
+                "agreement": "By sharing this map you aknowledge that you have the rights to share it and that you are not violating any terms of service of any of the used assets. You also agree that the map will be stored on the 3D Canvas server and that it can be removed at any time.",
+                "imageinfo": "Please upload a screenshot of the map on imgur and paste the link in the image field. If correct the image will show in the preview.",
+                "title": "Share Map",
+                "name": "Map Name",
+                "description": "Description",
+                "author": "Author",
+                "image": "Image",
+                "imageplaceholder": "Image URL",
+                "share": "Share",
+                "error": "An error occurred",
+                "preview": "Image Preview",
+                "secret": "Secret Key",
+                "secretinfo": "Note that the key is not stored in an encrypted format, it's suggested to use the autogenerated random key, it will be automatically saved for future use in case you decide to resubmit a new version of the map.",
+                "missingfields": "3D Canvas - Map Sharing | One or more fields are missing or no Asset Pack was selected",
+                "gamemaster": "Gamemaster is not an allowed author name.",
+                "assetpacks": "Asset Packs",
+                "assetinfo": "The shared map will not include custom assets. Please mainly use assets included in the allowed packs. Ctrl + Click to select multiple packs.",
+                "confirm": {
+                    "title": "Map Sharing confirmation",
+                    "content": "Are you sure you want to share this map? Once shared you will not be able to edit the shared content."
+                },
+                "success": {
+                    "titleupdated": "Map Updated",
+                    "title": "Map Shared",
+                    "content": "The map has been shared successfully. The map is now available for everyone to enjoy, thanks for sharing!"
+                }
+            },
+            "mapbrowser": {
+                "title": "Map Browser: {count} maps available",
+                "imported": "Imported scene",
+                "search": "Start typing to search..."
+            },
+            "packs": {
+                "baileywiki": "Baileywiki",
+                "mapmakingpack": "Mapmaking Pack",
+                "tokencollection": "Token Collection"
+            },
+            "error": "Too many requests, please try again later.",
+            "scenedirbutton": "Browse Community 3D Maps",
+            "contextbutton": "Share Scene"
+        },
+        "keybindings":{
+            "dialog": {
+                "title": "3D Canvas: Remove Core Keybindings",
+                "content": "For 3D Canvas controls to not overlap core controls, it's higly suggested to remove the core WASD Keybindings. You will still be able to move Tokens or other Entities with Arrow Keys or NumPad. Do you want to remove them?"
+            },
+            "lockcamera": "Enable Camera Auto Mode (Game Camera Only)",
+            "gameCameraTopDown": "Toggle Top-Down Camera (Game Camera Only)",
+            "toggleFirstPerson": "Toggle First-Person Camera",
+            "rotate": "Tile Editor: Rotate",
+            "translate": "Tile Editor: Translate",
+            "toggleGizmo": "Tile Editor: Toggle Gizmo",
+            "toggleSelect": "Group Selection (Hold while dragging)",
+            "resetView": "Reset Camera View",
+            "topdownView": "Top-Down Camera View",
+            "cameraToToken": "Focus Camera on Selected Token",
+            "panUp": "Camera: Pan Up",
+            "panDown": "Camera: Pan Down",
+            "panLeft": "Camera: Pan Left",
+            "panRight": "Camera: Pan Right",
+            "freeMode": "Free Placement mode",
+            "pingcamera": "Ping and move Camera to Current view for all Clients",
+            "ping": "Ping current mouse position location for all Clients",
+            "scaleWidth": "Tile Editor: Scale Width",
+            "scaleHeight": "Tile Editor: Scale Height",
+            "scaleGap": "Tile Editor: Scale Gap",
+            "scale": "Tile Editor: Scale",
+            "scaleScale": "Tile Editor: Scale Tile Scale",
+            "toggleMode": "Tile Editor: Cycle Fill Style",
+            "tiltX": "Tile Editor: Tilt X",
+            "tiltY": "Tile Editor: Tilt Y"
+        },
+        "flags": {
+            "meshStats": "Vertices: %v% | Triangles: %t% | Meshes: %m% | Instances: %i%",
+            "maxElevation": {
+                "label": "Max Elevation",
+                "notes": "Maximum allowed elevation for tokens on this scene."
+            },
+            "doorType":{
+                "options": {
+                    "none": "None",
+                    "door": "Door",
+                    "secret" : "Secret"
+                }
+            },
+            "textureMode": {
+                "label": "Texture Mode",
+                "options": {
+                    "stretch": "Stretch",
+                    "repeat": "Repeat"
+                }
+            },
+            "textureRepeat": {
+                "label": "Texture Repeat"
+            },
+            "flipY": {
+                "label": "Flip Y"
+            },
+            "doorState": {
+                "options": {
+                    "open": "Open",
+                    "closed": "Closed",
+                    "locked": "Locked"
+                }
+            },
+            "isFog":{
+                "label": "Is Fog of War Box?",
+                "notes": "Obscure view when camera enters this template. Works only for rectangle templates."
+            },
+            "enablePlayers":{
+                "label": "Enable for Players",
+                "notes": "Allow players to open the 3D view for this scene, if the fog of war is not enabled, the map will be fully visible."
+            },
+            "auto3d":{
+                "label": "Enable 3D on Load"
+            },
+            "bloom":{
+                "label": "Enable Bloom"
+            },
+            "bloomThreshold":{
+                "label": "Bloom Threshold"
+            },
+            "bloomStrength":{
+                "label": "Bloom Strength"
+            },
+            "bloomRadius":{
+                "label": "Bloom Radius"
+            },
+            "filter": {
+                "label": "Filter",
+                "options": {
+                    "none": "None",
+                    "grayscale": "Grayscale",
+                    "sepia": "Sepia",
+                    "invert": "Invert",
+                    "brightness": "Brightness",
+                    "contrast": "Contrast",
+                    "saturate": "Saturation",
+                    "hue": "Hue",
+                    "custom": "Custom"
+                }
+            },
+            "filterStrength": {
+                "label": "Filter Strength"
+            },
+            "filterCustom": {
+                "label": "Custom Filter",
+                "placeholder": "eg. brightness(0.5) contrast(1.5) saturate(0.5)"
+            },
+            "skybox" : {
+                "label": "Skybox Image",
+                "placeholder": "Skybox Image",
+                "notes": "The file needs to be in the same folder of 6 total files, files must contain _ft, _bk, _up, _dn, _rt, _lf."
+            },
+            "exr" : {
+                "label": "HDRI",
+                "placeholder": "EXR File",
+                "notes": "Supports .EXR files or images in a 360° panorama format. If no skybox is selected, the HDRI will be used as the background."
+            },
+            "exposure": {
+                "label": "Exposure",
+                "notes": "Exposure for the HDRI. 1 is the default, 2 is the brightest, and 0 is the darkest."
+            },
+            "renderTable": {
+                "label": "Display Table",
+                "notes": "Render the table in the 3D view."
+            },
+            "tableTex" : {
+                "label": "Table Texture",
+                "placeholder": "Table Texture"
+            },
+            "renderBackground": {
+                "label": "Display Background",
+                "notes": "Display the background image of the scene as a board."
+            },
+            "enableGrid": {
+                "label": "Enable Grid"
+            },
+            "enableRuler": {
+                "label": "Enable Ruler"
+            },
+            "enableFogOfWar": {
+                "label": "Enable Fog of War (Performance Heavy)",
+                "notes": "Performance Heavy. This option will enable Fog of War in 3D, if 'Use 3D Geometry for Sight calculations' is enabled, Fog of War will be calculated based on 3D Geometry (it will still be two dimensional)."
+            },
+            "bakeLights": {
+                "label": "Pre-Bake Lights",
+                "notes": "Pre-Bake the shadow casting of lights on scene load, they won't be dinamyc but they will not go through walls."
+            },
+            "enableFog": {
+                "label": "Enable Fog"
+            },
+            "fogColor": {
+                "label": "Fog Color"
+            },
+            "fogDistance": {
+                "label": "Fog Distance"
+            },
+            "sceneTint": {
+                "label": "Scene Tint"
+            },
+            "timeSync": {
+                "label": "Automatic Lighting",
+                "options": {
+                    "off": "Off",
+                    "time": "Sync Position with World Time",
+                    "darkness": "Sync Exposure with Scene Darkness",
+                    "both": "Sync Both (Works best with SmallTime)"
+                }
+            },
+            "lockCamera": {
+                "label": "Lock Camera Perspective",
+                "options": {
+                    "off": "Off",
+                    "players": "Players Only",
+                    "all": "Everyone"
+                }
+            },
+            "sunPosition": {
+                "label": "Time of Day (24h)"
+            },
+            "sunDistance": {
+                "label": "Sun Distance"
+            },
+            "sunTilt": {
+                "label": "Sun Tilt"
+            },
+            "sunIntensity": {
+                "label": "Sun Intensity"
+            },
+            "shadowBias": {
+                "label": "Shadow Bias",
+                "notes": "Number that determines how shadows are rendered, if you notice black stripes on entities in the scene, you can adjust this number. Correct values for this number tend to be very small, it's suggested to make increments or decrements of 0.00001 or less."
+            },
+            "showSceneWalls": {
+                "label": "Render Walls"
+            },
+            "showSceneDoors": {
+                "label": "Render Doors"
+            },
+            "showSceneFloors": {
+                "label": "Render Tiles"
+            },
+            "initialview": {
+                "label": "Initial View Position",
+                "notes": "Default camera position when the scene is loaded - before capturing the camera view set the target by using a ping.",
+                "button": "Capture Camera View",
+                "buttondel": "Clear Stored Camera View"
+            },
+            "wallFloorAlpha": {
+                "label": "Wall/Floor Alpha"
+            },
+            "renderSceneLights": {
+                "label": "Render Scene Lights"
+            },
+            "mirrorLevels": {
+                "label": "Mirror Levels Tile Visibility"
+            },
+            "object3dSight": {
+                "label": "Use 3D Geometry for sight calculations"
+            },
+            "enableGameCamera": {
+                "label": "Enable Game Camera",
+                "notes": "Enable the game camera for this Scene. The Game Camera Must be Enabled globally in the 3D Canvas Settings for this to work."
+            },
+            "model3d" : {
+                "label": "3D Model"
+            },
+            "rotation": {
+                "label": "Rotation"
+            },
+            "dynaMesh" : {
+                "label": "Dynamic Mesh",
+                "options": {
+                    "default": "None (Use 3D Model)",
+                    "box": "Box",
+                    "sphere": "Sphere",
+                    "cylinder": "Cylinder",
+                    "cone": "Cone",
+                    "tube": "Tube",
+                    "dome": "Dome",
+                    "billboard": "Billboard",
+                    "billboard2": "Billboard (Cross)",
+                    "text": "Text (Use 3D Model field for text)",
+                    "mapGen": "Map Generator"
+                }
+            },
+            "dynaMeshResolution" : {
+                "label": "Dynamic Mesh Resolution"
+            },
+            "imageTexture":{
+                "label": "Texture"
+            },
+            "displacementMap": {
+                "label": "Heightmap/Heatmap"
+            },
+            "invertDisplacementMap": {
+                "label": "Invert Heightmap/Heatmap"
+            },
+            "displacementIntensity": {
+                "label": "Heightmap Intensity"
+            },
+            "displacementMatrix": {
+                "label": "Heightmap Matrix"
+            },
+            "wallSidesTexture": {
+                "label": "Sides Texture"
+            },
+            "wallSidesTint": {
+                "label": "Sides Tint"
+            },
+            "fillType": {
+                "header": "Tiling",
+                "label": "Fill Type",
+                "options": {
+                    "stretch": "Single",
+                    "tile": "Repeat",
+                    "merged": "Merged Tile"
+                }
+            },
+            "enableGravity": {
+                "label": "Gravity",
+                "options": {
+                    "none": "Disabled",
+                    "gravity": "Gravity only",
+                    "gravityRotation": "Gravity + Surface Rotation"
+                }
+            },
+            "depth":{
+                "label": "Depth"
+            },
+            "material": {
+                "label": "Material",
+                "options": {
+                    "none": "Default",
+                    "optgroup": {
+                        "presets": "Presets",
+                        "advanced": "Advanced"
+                    },
+                    "presets": {
+                        "basic-plastic": "Basic Plastic",
+                        "premium-plastic": "Premium Plastic",
+                        "steel": "Steel",
+                        "bronze": "Bronze",
+                        "copper": "Copper",
+                        "hammered-steel": "Hammered Steel",
+                        "leather": "Leather",
+                        "marble": "Marble",
+                        "wood": "Wood"
+                    },
+                    "basic": "Basic (no Lighting/Shadows)",
+                    "texcol": "Texture/Color",
+                    "plastic": "Plastic",
+                    "wood": "Wood",
+                    "metal": "Metal",
+                    "pbr": "PBR"
+                }
+            },
+            "color": {
+                "label": "Color",
+                "notes": "Material and Color will work only on some models, usually the grey/untextured ones."
+            },
+            "tint": {
+                "label": "Tint Color"
+            },
+            "shading": {
+                "label": "Shading",
+                "options": {
+                    "default": "Default",
+                    "flat": "Flat",
+                    "smooth": "Smooth"
+                }
+            },
+            "sides": {
+                "label": "Side",
+                "options": {
+                    "default": "Default",
+                    "FrontSide": "Front Side",
+                    "BackSide": "Back Side",
+                    "DoubleSide": "Double Side"
+                }
+            },
+            "noise": {
+                "header": "Terrain",
+                "label": "Noise Type",
+                "options": {
+                    "none": "None",
+                    "simplex": "Simplex",
+                    "perlin": "Perlin"
+                }
+            },
+            "noiseScale": {
+                "label": "Noise Scale"
+            },
+            "noiseHeight": {
+                "label": "Height"
+            },
+            "noisePersistence": {
+                "label": "Persistence"
+            },
+            "noiseOctaves": {
+                "label": "Octaves"
+            },
+            "noiseLacunarity": {
+                "label": "Lacunarity"
+            },
+            "noiseExponent": {
+                "label": "Exponent"
+            },
+            "noiseFlattening": {
+                "label": "Flattening"
+            },
+            "shaderIntensity": {
+                "label": "Shader Intensity"
+            },
+            "shaderSpeed": {
+                "label": "Speed"
+            },
+            "shaderOther": {
+                "label": "Shader Other"
+            },
+            "shaderOther2": {
+                "label": "Shader Other 2"
+            },
+            "shaderAlt": {
+                "label": "Use Alternative Mode"
+            },
+            "baseColor": {
+                "label": "Base Color"
+            },
+            "disableBase": {
+                "label": "Disable Base"
+            },
+            "removeBase": {
+                "label": "Remove Base",
+                "notes": "Removes the original model's base, this will only work if the base is named 'base' in the 3D Model data."
+            },
+            "solidBaseMode": {
+                "label": "Base Mode",
+                "options": {
+                    "default": "Default",
+                    "merge": "Merge",
+                    "ontop": "On Top"
+                }
+            },
+            "draggable": {
+                "label": "Draggable"
+            },
+            "alwaysVisible": {
+                "label": "Always Visible"
+            },
+            "enableAnim": {
+                "label": "Enable Animation (if present)"
+            },
+            "animIndex":{
+                "label": "Animation Index"
+            },
+            "animSpeed":{
+                "label": "Animation Speed"
+            },
+            "paused": {
+                "label": "Paused"
+            },
+            "faceCamera":{
+                "label": "Face Camera Mode",
+                "options": {
+                    "default": "Global Setting (Default)",
+                    "face": "Face Camera",
+                    "noface": "Don't Face Camera"
+                }
+            },
+            "rotationAxis" : {
+                "label": "Rotation Axis",
+                "options": {
+                    "x": "X",
+                    "z": "Z",
+                    "y": "Y"
+                },
+                "notes": "The axis to use when the original token rotation changes. If the original file was in STL format this will usually be Z, otherwise Y"
+            },
+            "autoCenter": {
+                "label": "Auto Center"
+            },
+            "autoGround": {
+                "label": "Auto Ground"
+            },
+            "rotationX" : {
+                "label": "Rotation X"
+            },
+            "rotationY" : {
+                "label": "Rotation Y"
+            },
+            "rotationZ" : {
+                "label": "Rotation Z"
+            },
+            "rotateBase": {
+                "label": "Fix Base Rotation",
+                "notes": "Some models require the selection indicator to be rotated, enable as necessary. (usually files converted from STL)"
+            },
+            "offsetX": {
+                "label": "Offset X"
+            },
+            "offsetY": {
+                "label": "Offset Y"
+            },
+            "offsetZ": {
+                "label": "Offset Z"
+            },
+            "scale": {
+                "label": "Scale"
+            },
+            "yScale": {
+                "label": "Y Scale"
+            },
+            "tileScale": {
+                "label": "Tile Scale"
+            },
+            "gap": {
+                "label": "Gap"
+            },
+            "tilt": {
+                "label": "Tilt"
+            },
+            "tiltX": {
+                "label": "Tilt X"
+            },
+            "tiltZ": {
+                "label": "Tilt Y"
+            },
+            "randomRotation": {
+                "label": "Randomize Rotation"
+            },
+            "randomColor": {
+                "label": "Randomize Color"
+            },
+            "randomDepth": {
+                "label": "Randomize Depth"
+            },
+            "randomScale": {
+                "label": "Randomize Scale"
+            },
+            "randomPosition": {
+                "label": "Randomize Position"
+            },
+            "randomSeed": {
+                "label": "Random Seed"
+            },
+            "tiling": {
+                "label": "Tiling Options"
+            },
+            "shader": {
+                "header": "Shaders"
+            },
+            "wallOpacity": {
+                "label": "Opacity"
+            },
+            "roughness": {
+                "label": "Roughness"
+            },
+            "metalness": {
+                "label": "Reflectivity"
+            },
+            "transparency": {
+                "label": "Opacity"
+            },
+            "wallDepth": {
+                "label": "Wall Depth"
+            },
+            "joinWall": {
+                "label": "Join Wall"
+            },
+            "stretchTex": {
+                "label": "Stretch Texture"
+            },
+            "tcollision": {
+                "label": "Block Movement"
+            },
+            "tsight": {
+                "header": "Vision",
+                "label": "Block Sight"
+            },
+            "tcameraCollision": {
+                "label": "Camera Collider"
+            },
+            "sightMeshComplexity": {
+                "label": "Collider Resolution"
+            },
+            "enableCollision": {
+                "label": "Enable Collision",
+                "options": {
+                    "0": "Off",
+                    "1": "On (From Token)",
+                    "2": "On (From Sky)"
+                }
+            },
+            "stem": {
+                "label": "Enable Stem"
+            },
+            "collisionPlane": {
+                "label": "Collision Plane"
+            },
+            "castShadow": {
+                "label": "Cast Shadow",
+                "notes": "Enable the shadow casting on the light - WARNING High performance impact!."
+            },
+            "particlePreset": {
+                "label1": "Particle Preset 1",
+                "label2": "Particle Preset 2",
+                "notes": "The preset to use for the particle effects.",
+                "options": {
+                    "none": "None",
+                    "rain": "Rain",
+                    "heavyrain": "Heavy Rain",
+                    "snow": "Snow",
+                    "hail": "Hail",
+                    "leaves": "Leaves",
+                    "embers": "Embers",
+                    "mysteriouslights": "Mysterious Lights",
+                    "stars": "Stars",
+                    "starfall": "Starfall (JB2A)",
+                    "smoke": "Smoke",
+                    "toxic": "Toxic Fumes",
+                    "dust": "Dust",
+                    "custom": "Custom"
+                }
+            },
+            "particleTexture": {
+                "label": "Texture"
+            },
+            "particleColor": {
+                "label": "Color"
+            },
+            "particleSize": {
+                "label": "Size"
+            },
+            "particleSpeed": {
+                "label": "Speed"
+            },
+            "particleDensity": {
+                "label": "Density"
+            },
+            "particleDirection": {
+                "label": "Direction"
+            },
+            "particleOpacity": {
+                "label": "Opacity"
+            },
+            "particleVelocity": {
+                "label": "Velocity"
+            },
+            "particleBlending": {
+                "label": "Blending"
+            },
+            "particleRandomRotation": {
+                "label": "Random Rotation"
+            },
+            "particleRandomScale": {
+                "label": "Random Size"
+            },
+            "particleRotationspeed": {
+                "label": "Rotation Speed"
+            },
+            "particleBlend": {
+                "label": "Blend"
+            },
+            "lightParticleEffect": {
+                "ParticleSprite": {
+                    "label": "Sprite"
+                },
+                "ParticleScale": {
+                    "label": "Scale"
+                },
+                "ParticleEmitterSizeMultiplier": {
+                    "label": "Emitter Size Multiplier"
+                },
+                "ParticleColor": {
+                    "label": "Starting Color"
+                },
+                "ParticleColor2": {
+                    "label": "Ending Color"
+                },
+                "ParticleForce": {
+                    "label": "Force"
+                },
+                "ParticleLife": {
+                    "label": "Life"
+                },
+                "ParticleCount": {
+                    "label": "Count"
+                },
+                "ParticleEmitTime": {
+                    "label": "Emit Time"
+                },
+                "ParticleMass": {
+                    "label": "Mass"
+                },
+                "ParticleGravity": {
+                    "label": "Gravity"
+                },
+                "enableParticle": {
+                    "label": "Enable Particle Effect"
+                },
+                "enableParticleHidden": {
+                    "label": "Enable Particle Effect when the Light is Disabled."
+                },
+                "ParticleAlphaStart": {
+                    "label": "Starting Opacity"
+                },
+                "ParticleAlphaEnd": {
+                    "label": "Ending Opacity"
+                },
+                "ParticlePushX": {
+                    "label": "Push X"
+                },
+                "ParticlePushY": {
+                    "label": "Push Y"
+                },
+                "ParticlePushZ": {
+                    "label": "Push Z"
+                },
+                "header": {
+                    "title": "Particle Effect",
+                    "notes": "The particle effect to use for the light."
+                }
+            }
+        },
+        "settings" : {
+            "rangeFinder": {
+                "name": "Range Finder",
+                "hint": "Show distance to tokens when hovering over them.",
+                "options": {
+                    "none": "Disabled",
+                    "combat": "Only in Combat",
+                    "always": "Always"
+                }
+            },
+            "resolutionMultiplier": {
+                "name": "Resolution Multiplier",
+                "hint": "WARNING: Changing this setting will also affect the resolution of the 2D View. Requires Refresh."
+            },
+            "fogDebounce": {
+                "name": "Fog of War Update Throttling",
+                "hint": "If Disabled vision and Fog of War will be constantly refreshed."
+            },
+            "sharedContext": {
+                "name": "Shared Context",
+                "hint": "If Enabled, Fog of War performance will be drastically improved but you will not be able to use the Mini Canvas."
+            },
+            "preapplyShaders": {
+                "name": "Pre-Load Shaders",
+                "hint": "If Enabled, the shaders will be applied before the render loop starts. This will prevent stutters when activating shaders for the first time, but might cause a minor impact on performance and/or load times."
+            },
+            "showAdvanced": {
+                "show": "Show Advanced Settings",
+                "hide": "Hide Advanced Settings",
+                "name": "Always Show Advanced Settings",
+                "hint": "Show the advanced settings in configuration menus by default."
+            },
+            "navigatorAuto": {
+                "name": "Navigator Follow Mode",
+                "hint": "Automatically enables the Follow Mode for the 3D Navigator on scene load.",
+                "options": {
+                    "none": "Nobody",
+                    "players": "Players Only",
+                    "all": "Players and GMs"
+                }
+            },
+            "headers":{
+                "basics": {
+                    "title": "Basics",
+                    "notes": "Configure basic settings for this 3D Scene."
+                },
+                "environment": {
+                    "title": "Environment",
+                    "notes": "Settings for the 3D environment and effects."
+                },
+                "lighting": {
+                    "title": "Lighting",
+                    "notes": "Configure the global Lighting of the scene."
+                },
+                "particles": {
+                    "title": "Particles",
+                    "notes": "Configure Particle Effects."
+                },
+                "visibility": {
+                    "title": "Visibility",
+                    "notes": "Configure the visibility of 3D Objects."
+                }
+            },
+            "canping": {
+                "name": "Players Can Ping",
+                "hint": "Enable the ability to ping locations for players (default Shift+E)."
+            },
+            "canpingpan": {
+                "name": "Players Can Send Camera Position",
+                "hint": "Enable the ability to send the camera position for players (default Shift+Q)."
+            },
+            "enableGameCamera": {
+                "name": "Enable Game Camera",
+                "hint": "Enable the 'Video Game' like camera. This will be forced on for players while the GM will be able to toggle it."
+            },
+            "gameCameraMinAngle": {
+                "name": "Min Angle",
+                "hint": "The minimum angle the camera can be rotated to."
+            },
+            "gameCameraMaxAngle": {
+                "name": "Max Angle",
+                "hint": "The maximum angle the camera can be rotated to."
+            },
+            "gameCameraClipping": {
+                "name": "Clipping",
+                "hint": "If enabled hide objects covering the current camera target."
+            },
+            "gameCameraDefaultGm": {
+                "name": "GM Default On",
+                "hint": "Wheter GMs should have the Game Camera toggled on when first loading a scene."
+            },
+            "gameCameraAutoLock": {
+                "name": "Auto Re-Lock",
+                "hint": "If the Game Camera is unlocked from it's target, automatically relock it if the target changes."
+            },
+            "gameCameraWarnings": {
+                "name": "Show Warnings",
+                "hint": "If enabled, show warning for Game Camera functionality."
+            },
+            "configApp": {
+                "title": "3D Canvas Configuration",
+                "name": "Global Settings",
+                "label": "Configure Global 3D Canvas Settings",
+                "hint": "Configure Global 3D Canvas Settings. These settings will be applied to all clients. All other settings below this one will be client specific.",
+                "save": "Save Settings",
+                "tabs": {
+                    "canvas": "Canvas",
+                    "token": "Token",
+                    "base": "Base",
+                    "misc": "Misc",
+                    "perm": "Permissions",
+                    "gc": "Game Camera"
+                }
+            },
+            "baseStyle": {
+                "name": "Base Style",
+                "hint": "The base style to use: Image will display the chosen image, solid will draw a miniature style base.",
+                "options": {
+                    "image": "Image",
+                    "solid": "Solid",
+                    "solidindicator": "Solid + Direction Indicator"
+                }
+            },
+            "solidBaseMode": {
+                "name": "Solid Base Mode",
+                "hint": "The default solid base mode to use: Merge will not move the original model, on top will offset the model to the top of the base.",
+                "options": {
+                    "merge": "Merge",
+                    "ontop": "On Top"
+                }
+            },
+            "solidBaseColor": {
+                "name": "Solid Base Color",
+                "hint": "The color of the solid base. Can be a hex value or a color name (or any CSS color). default is #1c1c1c"
+            },
+            "highlightCombat": {
+                "name": "Combat Highlight",
+                "hint": "Highlight the current combatant."
+            },
+            "startMarker": {
+                "name": "Turn Start Marker",
+                "hint": "When in combat, place a marker where a token started the turn. Only owners of that token will be able to see it."
+            },
+            "selectedImage": {
+                "name": "Selection Highlight Image",
+                "hint": "The image to display when selecting a token."
+            },
+            "colorizeInidcator": {
+                "name": "Colorize Highlight Image",
+                "hint": "Colorize the Highlight Image to match default foundry border colors."
+            },
+            "enableReticule": {
+                "name": "Enable Reticule",
+                "hint": "Enable the targeting reticule to highlight tokens the current user is targeting. This will create a reticule similar to the 2D one."
+            },
+            "hideTarget": {
+                "name": "Hide Target Indicator (if solid base)",
+                "hint": "Hide the target indicator if the token has the base enabled, the targets will be shown in the base ring highlight."
+            },
+            "rotateIndicator": {
+                "name": "Rotate Base",
+                "hint": "Rotate the 3D Base to match token Rotation."
+            },
+            "templateEffects": {
+                "name": "Enable Template Effects",
+                "hint": "Automatically apply shaders to templates based on damage type. Currently only dnd5e is supported."
+            },
+            "lightHelpers": {
+                "name": "Enable Light Helpers",
+                "hint": "Enable the light helpers. This will show the light source and the area of effect of the light when in the lighting layer."
+            },
+            "templateSyle" : {
+                "name": "Template Style",
+                "hint": "The style to use for the measured templates.",
+                "options": {
+                    "wireframe": "Wireframe",
+                    "solid": "Solid"
+                }
+            },
+            "gridMode" : {
+                "name": "Grid Draw Mode",
+                "hint": "How the grid is drawn. Fast is better in general but only supports square grids. Mirror, will mirror 1:1 the foundry grid but is more expensive to render.",
+                "options": {
+                    "fast": "Fast",
+                    "mirror": "Mirror"
+                }
+            },
+            "autoPan": {
+                "name": "Auto Pan",
+                "hint": "Hooks the 3D Camera panning to the 2D one. Mainly, moving a token will have the camera follow it. When disabled you can always pan to the selected token with Ctrl+X",
+                "options": {
+                    "none": "Disabled",
+                    "player": "Only Players",
+                    "all": "Everyone"
+                }
+            },
+            "conservativeHitbox": {
+                "name": "Conservative Hitbox",
+                "hint": "Restrict hitbox size for tokens so that it does not overflow outside the token's base."
+            },
+            "screenspacepanning": {
+                "name": "Enable Screen Space Panning",
+                "hint": "Enable screen space panning for the 3D view (map controls style)."
+            },
+            "altCameraControls": {
+                "name": "Alternative Camera Controls",
+                "hint": "When enabled, Left click will not rotate the camera. Rotation will be on Middle Mouse button instead."
+            },
+            "enabledamping": {
+                "name": "Enable Damping",
+                "hint": "Enable damping for the camera. Disable this option if you experience motion sickness. (Shift+R in 3D view to reset the camera and apply this change)."
+            },
+            "camerafocuszoom": {
+                "name": "Enable Camera Focus Zoom",
+                "hint": "When focusin the camera on a token with Shift+X Zoom in on the token"
+            },
+            "standupFace": {
+                "name": "Stand-ups Face Camera",
+                "hint": "2D Tokens displayed in a stand-up style will always face the camera."
+            },
+            "useMultithreading": {
+                "name": "EXPERIMENTAL: Use Multithreading",
+                "hint": "Use multithreading to improve performance of Fog of War Calculations. This settings has no effect if you are not using the Fog of War."
+            },
+            "miniCanvas": {
+                "name": "Enable Canvas Popout",
+                "hint": "Pop out the 2d canvas into a separate window when the 3D mode is activated"
+            },
+            "preventNegative": {
+                "name": "Prevent Negative Elevation",
+                "hint": "Prevents token movement to go below the game board"
+            },
+            "outline": {
+                "name": "Outline",
+                "hint": "Outline canvas objects on hover and selection. Disable for better performance."
+            },
+            "fullTransparency": {
+                "name": "True Transparency",
+                "hint": "To avoid visual artifacts, 3D Canvas uses alpha clipping to handle transparency, this can result in jagged edges. If you use very few transparent textures, or you have no overlapping transparency you can enable this setting to make transparent textures look better. Use at your own risk, may cause visual glitches."
+            },
+            "globalCollision": {
+                "name": "Enable Global Collision",
+                "hint": "Enable collision for all tokens on the board."
+            },
+            "antialiasing": {
+                "name": "Anti-Aliasing",
+                "hint": "Enable Anti-Aliasing at the cost of some performance. FXAA will have almost zero impact on performance. SMAA will give you better results but might be slightly more performance intensive.",
+                "options": {
+                    "none": "Disabled",
+                    "fxaa": "FXAA",
+                    "smaa": "SMAA"
+                }
+            },
+            "fowQuality": {
+                "name": "Fog of War Quality",
+                "hint": "Set the resolution of the Fog of War.",
+                "options": {
+                    "native": "Native",
+                    "high": "High",
+                    "medium": "Medium",
+                    "low": "Low",
+                    "verylow": "Very Low"
+                }
+            },
+            "dofblur": {
+                "name": "Depth of Field",
+                "hint": "Enable Depth of Field Blur. This will blur the background when the camera is close to a token making it feel like you are at the table. Higher setting means more blur, performance is not affected by the level of blur. Can have high performance impact when enabled.",
+                "options": {
+                    "off": "Disabled",
+                    "low": "Low",
+                    "medium": "Medium",
+                    "high": "High"
+                }
+            },
+            "disableLighting":{
+                "name": "Disable Shadows",
+                "hint": "Disable Shadows for better performance."
+            },
+            "shadowQuality":{
+                "name": "Shadow Quality",
+                "hint": "The resolution of the shadows. Set to 'Disabled' to disable shadows.",
+                "options": {
+                    "none": "Disabled",
+                    "low": "Low",
+                    "medium": "Medium",
+                    "high": "High",
+                    "ultra": "Ultra",
+                    "gamer": "Gamer"
+                }
+            },
+            "enableShaders": {
+                "name": "Enable Shaders",
+                "hint": "Enable shader special effects. Some of the effects can be performance intensive depending on the hardware and the amount. Disable for better performance."
+            },
+            "enableEffects": {
+                "name": "Enable Effects",
+                "hint": "Enable weather and particle effects. Some of the effects can be performance intensive depending on the hardware and the amount. Disable for better performance."
+            },
+            "softShadows":{
+                "name": "Soft Shadows",
+                "hint": "Enable soft shadows at a minor cost in performance. Requires refresh."
+            },
+            "resolution": {
+                "name": "Resolution",
+                "hint": "The resolution of the 3D canvas, this will affect performance.",
+                "options": {
+                    "full": "High",
+                    "half": "Medium",
+                    "quarter": "Low"
+                }
+            },
+            "cameralockzero": {
+                "name": "Prevent Negative Camera",
+                "hint": "Prevent camera to Pivot or Pan below zero (requires refresh)."
+            },
+            "debugMode": {
+                "name": "Debug Mode",
+                "hint": "Show helpful debug info for troubleshooting."
+            }
+        },
+        "exporter" : {
+            "title": "Export objects as GLTF",
+            "tokens": "Tokens",
+            "interactive": "Include draggable Tokens",
+            "tiles": "Tiles",
+            "all": "Full Scene",
+            "doors": "Doors",
+            "walls": "Walls",
+            "background": "Background",
+            "export": "Export",
+            "cancel": "Cancel"
+        },
+        "macrodialog": {
+            "title": "Export Particle Effect",
+            "label": "Name:",
+            "export": "Save to Macro",
+            "cancel": "Cancel",
+            "placeholder": "Enter a name for the macro"
+        },
+        "welcome": {
+            "title": "Welcome to 3D Canvas",
+            "content": "<h1>Welcome to 3D!</h1>\nWelcome to 3D Canvas! First, thanks for supporting my development endevour and making this project possible!\nSimply <b>Click the <i class='fas fa-cube'></i> button</b> (Token controls, top left) to switch a scene to 3D.\n<h2>Getting Started</h2>\nThis module, while not complicated to use has a lot of options that will give you the ability to highly customize the system. It's highly advised to <b>read the documentation</b> (by clicking the <b><i class='fas fa-book'></i> Getting Started</b> button below). You can always find the documentation later in your compendiums! The documentation also has a collection of video tutorials that you can reference.<h2>Troubleshooting</h2>\nIf you experience any <b>issue</b> or have trouble with <b>configuration</b> or <b>3d models</b> do not esitate to <b>reach out</b> on the discord channel!<hr>",
+            "ok": "Dismiss",
+            "dontshowagain": "Don't show again",
+            "opencompendium": "Getting Started"
+        },
+        "performance": {
+            "verylow": "Very Low",
+            "low": "Low",
+            "medium": "Medium",
+            "high": "High",
+            "veryhigh": "Very High",
+            "dialog": {
+                "title": "3D Canvas: Performance Settings",
+                "content": "Chose your preferred Graphic Quality (the page will be refreshed):"
+            },
+            "buttonTooltip": {
+                "verylow": "Recommended for Older Integrated GPUs",
+                "low": "Recommended for Older Dedicated GPUs or Modern Integrated GPUs",
+                "medium": "Recommended for Modern Dedicated GPUs",
+                "high": "Recommended for High-End Dedicated GPUs",
+                "veryhigh": "Recommended for High-End Dedicated GPUs"
+            },
+            "settings": {
+                "header": "Graphics Settings",
+                "presetHint": "Choose a visual quality preset to automatically set the settings below. You can always change them individually afterwards. Hover buttons for hardware recommendations.",
+                "resolution": "With current settings, 3D Canvas will run at a {resolution} resolution.",
+                "resolutionTooltip": "Using 3D Canvas at a high resolution can be very demanding on lower end hardware, especially when running above 2K resolution. If you experience performance issues, try lowering the resolution."
+            },
+            "notification": "3D Canvas: Performance Mode set to {performancemode}."
+        },
+        "tileEditor": {
+            "controlsReference": {
+                "title": "3D Canvas Tile Editor Controls",
+                "translate": "Translate",
+                "rotate": "Rotate",
+                "scale": "Scale",
+                "toggleGizmo": "Toggle Gizmo",
+                "scaleWidth": "Width",
+                "scaleHeight": "Height",
+                "tiltX": "Tilt X",
+                "tiltZ": "Tilt Y",
+                "scaleGap": "Gap",
+                "scaleScale": "Tile Scale",
+                "toggleMode": "Fill Mode",
+                "wheel": "Mouse Wheel to Increase/Decrease Values",
+                "clone": "Before initiating a transform, hold CTRL to Clone",
+                "select": "Hold F and drag to select, Left drag to release previous objects, Right drag to add to selection"
+            }
+        },
+        "tokenAnimations": {
+            "title": "Animations",
+            "twirl": "Twirl",
+            "slash": "Slash",
+            "charge": "Charge",
+            "swipe": "Swipe",
+            "buff": "Bulk Up",
+            "debuff": "Bulk Down",
+            "bow": "Bow",
+            "breath": "Breath",
+            "shake": "Shake",
+            "knockback": "Knockback"
+        },
+        "baseStyles": {
+            "roundDoubleRing": "Round Double Ring",
+            "sharp": "Sharp",
+            "sharpIndicator": "Sharp + Indicator",
+            "rounded": "Rounded",
+            "ringHollow": "Ring Hollow",
+            "jb2ahex1": "Hex 1 (JB2A)",
+            "jb2ahex1Indicator": "Hex 1 + Indicator (JB2A)",
+            "jb2ahex2": "Hex 2 (JB2A)",
+            "jb2ahex2Indicator": "Hex 2 + Indicator (JB2A)",
+            "jb2around1": "Round 1 (JB2A)",
+            "jb2around1Indicator": "Round 1 + Indicator (JB2A)",
+            "jb2around2": "Round 2 (JB2A)",
+            "jb2around2Indicator": "Round 2 + Indicator (JB2A)",
+            "jb2asquare1": "Square 1 (JB2A)",
+            "jb2asquare1Indicator": "Square 1 + Indicator (JB2A)",
+            "jb2asquare2": "Square 2 (JB2A)",
+            "jb2asquare2Indicator": "Square 2 + Indicator (JB2A)"
+        },
+        "units":{
+            "ms": "Milliseconds",
+            "gu": "Grid Units",
+            "gs": "Grid Squares"
+        },
+        "shaders": {
+            "config": {
+                "title": "Shaders Configuration",
+                "save": "Save",
+                "autosave": "Autosave",
+                "apply": "Apply",
+                "macro-btn": "Macro",
+                "enabled": "Enabled?",
+                "label": "Shader Configuration",
+                "button": "Configure Shaders",
+                "notes": "Configure the visual effects to be used on this 3D Object.",
+                "slow": "WARNING: Using many instances of this shader may cause performance issues.",
+                "macro": {
+                    "title": "Create Shader Macro",
+                    "content": "Macro Name:",
+                    "created": "Macro '%s' created successfully!",
+                    "enabled": "Export enabled only",
+                    "players": "Allow Players"
+                }
+            },
+            "wind": {
+                "name": "Wind",
+                "description": "Wind like effect to add some movement to your vegetation.",
+                "speed": "Speed",
+                "direction": "Direction",
+                "intensity": "Intensity",
+                "affect_model": "Anchor (%)",
+                "convoluted": "Convoluted",
+                "ground_blend": "Ground Blending",
+                "ground_color": "Ground Color",
+                "reactive": "Reactive",
+                "reactive_intensity": "Reactive Intensity"
+            },
+            "distortion": {
+                "name": "Distortion",
+                "description": "Distortion effect perfect for a Lava pool or other viscous liquids.",
+                "speed": "Speed",
+                "direction": "Direction",
+                "intensity" : "Intensity",
+                "convoluted": "Convoluted"
+            },
+            "water": {
+                "name": "Water",
+                "description": "Simple, sine wave based, water effect. Effective and very cheap on performance.",
+                "speed": "Speed",
+                "direction": "Direction",
+                "wave_amplitude" : "Wave Density",
+                "wave_height" : "Wave Height"
+            },
+            "oil": {
+                "name": "Oil",
+                "description": "Oil/Liquid Metal effect. The effect can be colorized and scaled, keep in mind that the color will be distorted by the effect.",
+                "speed": "Speed",
+                "intensity" : "Intensity",
+                "scale": "Scale",
+                "color": "Color",
+                "blendMode": "Mix Blending"
+            },
+            "ocean": {
+                "name": "Ocean",
+                "description": "Complex water simulation that uses multiple waves. Heavier on performance than the simple water shader.",
+                "speed": "Speed",
+                "scale": "Scale",
+                "waveA_wavelength": "Wave A Wavelength",
+                "waveA_steepness": "Wave A Steepness",
+                "waveA_direction": "Wave A Direction",
+                "waveB_wavelength": "Wave B Wavelength",
+                "waveB_steepness": "Wave B Steepness",
+                "waveB_direction": "Wave B Direction",
+                "waveC_wavelength": "Wave C Wavelength",
+                "waveC_steepness": "Wave C Steepness",
+                "waveC_direction": "Wave C Direction",
+                "foam": "Highlights",
+                "reflections": "Reflections"
+            },
+            "grid": {
+                "name": "Grid",
+                "description": "Project the scene grid on this 3D Object. Only square grids are supported. This shader will use the grid color and opacity set in the scene settings.",
+                "normalCulling": "Normal Culling",
+                "heightCulling": "Height Culling"
+            },
+            "triplanar": {
+                "name": "Triplanar",
+                "description": "Advanced texture projection technique to correctly texture surfaces that would otherwise have stretched textures on steep angles.",
+                "roughnessAdjust": "Reflection Adj."
+            },
+            "textureScroll": {
+                "name": "Scroll",
+                "description": "Simple texture scrolling effect similar to the 'Parallaxia' module.",
+                "speedX": "Speed X",
+                "speedY": "Speed Y",
+                "direction": "Direction"
+            },
+            "fire": {
+                "name": "Fire",
+                "description": "Fire effect. The effect can be colorized and scaled to produce results that go way beyond fire.",
+                "speed": "Speed",
+                "intensity" : "Intensity",
+                "scale": "Scale",
+                "color": "Color",
+                "blendMode": "Mix Blending"
+            },
+            "lightning": {
+                "name": "Lightning",
+                "description": "Lightning like effect with moving electric arcs.",
+                "speed": "Speed",
+                "intensity" : "Intensity",
+                "scale": "Scale",
+                "color": "Color",
+                "blendMode": "Mix Blending"
+            },
+            "ice": {
+                "name": "Ice",
+                "description": "Frosted surface effect with a very subtle animation.",
+                "speed": "Speed",
+                "grain": "Grain",
+                "intensity" : "Intensity",
+                "scale": "Scale",
+                "color": "Color",
+                "blendMode": "Mix Blending"
+            },
+            "idle": {
+                "name": "Idle",
+                "description": "Simple displacement effect meant to be used on tokens to give them more life.",
+                "speed": "Speed",
+                "direction": "Direction",
+                "intensity": "Intensity",
+                "affect_model": "Anchor (%)"
+            },
+            "colorwarp": {
+                "name": "Color",
+                "description": "Color distortion effects, multiple can be set at the same time. Glow works best with the Bloom effect enabled in the scene configuration.",
+                "speed": "Speed",
+                "glow" : "Glow",
+                "hue_angle": "Hue Shift",
+                "flicker" : "Flicker",
+                "animate_range" : "Animation Range"
+            },
+            "textureRotate": {
+                "name": "Rotate",
+                "description": "Texture rotation effect, requires a texture and some texture repetition to work.",
+                "speed": "Speed",
+                "centerx": "X Anchor",
+                "centery": "Y Anchor"
+            },
+            "overlay": {
+                "name": "Overlay",
+                "description": "Texture Overlay. Requires a texture to be set. Use 'Multiply Blending' for textures with white background, 'Black Blending' for textures with black background.",
+                "textureDiffuse": "Texture",
+                "coveragePercent": "Coverage Percentage",
+                "color": "Color",
+                "strength": "Strength",
+                "repeat": "Repeat",
+                "black_alpha": "Black Blending",
+                "add_blend": "Additive Blending",
+                "mult_blend": "Multiply Blending"
+            },
+            "textureGradient": {
+                "name": "Gradient",
+                "description": "Texture Gradient. Requires a texture to be set. Map texture to elevation or inclination.\nWhen using Inclination, 1 corresponds to a flat surface, 0 to a vertical surface.",
+                "texCount": "Texture Count",
+                "useNormals": "Use Inclination",
+                "smoothing": "Smoothing",
+                "tex0Begin": "Texture 1 Begin",
+                "tex1Begin": "Texture 2 Begin",
+                "tex2Begin": "Texture 3 Begin",
+                "tex3Begin": "Texture 4 Begin",
+                "textureDiffuse0": "Texture 1",
+                "color0": "Color 1",
+                "repeat0": "Repeat 1",
+                "textureDiffuse1": "Texture 2",
+                "color1": "Color 2",
+                "repeat1": "Repeat 2",
+                "textureDiffuse2": "Texture 3",
+                "color2": "Color 3",
+                "repeat2": "Repeat 3",
+                "textureDiffuse3": "Texture 4",
+                "color3": "Color 4",
+                "repeat3": "Repeat 4"
+            },
+            "sound": {
+                "name": "Sound",
+                "description": "Requires a sound to be playing. For performance only the first sound playing will be used if multiple.",
+                "intensity": "Intensity",
+                "glow": "Glow",
+                "chroma": "Chroma",
+                "flat_bottom": "Flat Bottom",
+                "croma_offset_angle": "Chroma Offset"
+            }
+        },
+        "tours": {
+            "dialog": {
+                "title": "Getting Started",
+                "content": "Do you want to start the 3D Canvas Getting Started Tour?"
+            },
+            "getting-started": {
+                "title": "Getting Started",
+                "description": "This tour will guide you through the very basics of 3D Canvas.",
+                "step-0": {
+                    "title": "Getting to the 3D View (1/2)",
+                    "content": "Activate the Token Controls."
+                },
+                "step-1": {
+                    "title": "Getting to the 3D View (2/2)",
+                    "content": "Click on the Cube button to Activate the 3D View."
+                },
+                "step-2": {
+                    "title": "Controls",
+                    "content": "The Loading Screen contains helpful information on the 3D Canvas Camera and Token Controls."
+                },
+                "step-3": {
+                    "title": "Navigation",
+                    "content": "The navigation bar contains various buttons to toggle specific aspects of the 3D View. You can hover over the buttons to see a description of what they do."
+                },
+                "step-4": {
+                    "title": "Game Camera",
+                    "content": "The Game Camera is enabled by default for GMs and Players. If you are a GM, you can switch to Free Camera with this button. You can change the Game Camera options in the module settings or disable it per scene."
+                },
+                "step-5": {
+                    "title": "Controls Reference",
+                    "content": "You can bring back up the controls reference any time by clicking this button."
+                }
+            },
+            "first-tile": {
+                "title": "Placing your first 3D Tile",
+                "description": "This tour will get you started on placing 3D Tiles.",
+                "requires": "You need to have the 3D View active and the 3D Canvas Mapmaking Pack installed to start this tour.",
+                "step-0": {
+                    "title": "Tiles Layer",
+                    "content": "Head to the Tiles Layer."
+                },
+                "step-1": {
+                    "title": "Controls",
+                    "content": "Click this button any time to get a controls reference for the Tile Editor as a Chat Message (GM only)."
+                },
+                "step-2": {
+                    "title": "File Browser",
+                    "content": "Open the File browser."
+                },
+                "step-3": {
+                    "title": "Navigate to the 3D Assets",
+                    "content": "Follow the steps to get to the 3D Canvas Mapmaking Pack Tiles folder."
+                },
+                "step-4": {
+                    "title": "Navigate to the 3D Assets",
+                    "content": "Follow the steps to get to the 3D Canvas Mapmaking Pack Tiles folder."
+                },
+                "step-5": {
+                    "title": "Navigate to the 3D Assets",
+                    "content": "Follow the steps to get to the 3D Canvas Mapmaking Pack Tiles folder."
+                },
+                "step-6": {
+                    "title": "Navigate to the 3D Assets",
+                    "content": "Follow the steps to get to the 3D Canvas Mapmaking Pack Tiles folder."
+                },
+                "step-7": {
+                    "title": "Navigate to the 3D Assets",
+                    "content": "Follow the steps to get to the 3D Canvas Mapmaking Pack Tiles folder."
+                },
+                "step-8": {
+                    "title": "Drag & Drop",
+                    "content": "Drag & Drop a 3D Model the same way you would do with a 2D Tile. Use the Controls Reference to manipulate the Tile as you prefer. The 3D Canvas Macro Compendium includes useful macros to manipulate tiles."
+                }
+            },
+            "scene-configuration": {
+                "title": "3D Scene Configuration",
+                "description": "This tour will guide you through the scene configuration options.",
+                "requires": "You need to have the 3D View active to see this tour.",
+                "step-0": {
+                    "title": "Head to the 3D Tab",
+                    "content": "The 3D Tab contains all the settings for the 3D Scene."
+                },
+                "step-1": {
+                    "title": "Enable for Players",
+                    "content": "If you don't have this setting enabled, your players will not be able to enter the 3D View."
+                },
+                "step-2": {
+                    "title": "Enable 3D on Load",
+                    "content": "With this setting enabled, thee scene will be automatically loaded in the 3D View when you activate it."
+                },
+                "step-3": {
+                    "title": "Sight",
+                    "content": "By default 3D Canvas will mirror visibility of the 2D View using it's walls (indipendently of their visible status) to calculate token vision. Enable this setting to ignore the 2D Vision and use the 3D Environment to calculate sight."
+                },
+                "step-4": {
+                    "title": "Fog of War",
+                    "content": "The fog of war is disabled by default in 3D Mode even if it's enabled in 2D. While FoW is disabled in 3D, Players will be able to see the entire environment but tokens will still be hidden based on vision. If you wish to use FoW it's strongly suggested that you have 'Shared Context' enabled in the 3D Canvas module settings."
+                },
+                "step-5": {
+                    "title": "Environment",
+                    "content": "The HDRI and the Skybox contribute to the scene lighting (think of it as global illumination). Changing the HDRI can drastically alter how a scene looks! Try to set the HDRI to some of the options included in the 3D Canvas Mapmaking Pack!"
+                },
+                "step-6": {
+                    "title": "Skybox",
+                    "content": "If you are using a high quality HDRI, it's suggested to leave this field empty. Try setting the HDRI field to one of the 'Beautiful Skies' included in the Mapmaking Pack and Remove the Skybox field to see the difference."
+                },
+                "step-7": {
+                    "title": "Lighting",
+                    "content": "This section allows you to adjust the global lighting of the scene. Try messing with the basic sliders!"
+                },
+                "step-8": {
+                    "title": "Weather",
+                    "content": "Here you can set a Weather/Particle Effect for the scene. Try to enable one and see how it can enhance your scene!"
+                },
+                "step-9": {
+                    "title": "Advanced",
+                    "content": "The Scene Configuration offers many more options, once you are familiar with the basic settings you can click here to show all the advanced options."
+                }
+            }
+        },
+        "mergeTiles": {
+            "title": "Merge Tiles",
+            "content": "Merging Tiles is an irreversible action, it's suggested to make a backup of the scene before merging high amounts of tiles.<br>You are about to merge <strong>%count% Tiles</strong>. Selected tiles will be excluded. Are you sure you want to continue?"
+        }
+    }
+}
